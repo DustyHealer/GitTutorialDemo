@@ -1,0 +1,42 @@
+GIT COMMANDS
+
+git config - To check the config values in the git
+git config --global user.name "User name" - To set the username in config
+git config --global user.email "User email" - To set the user email in config
+git config --global user.name - To get the username from config
+git config --global user.email - To get the email from config
+
+pwd - present working directory
+ls - list content
+cd - change directory
+touch filename.ext - To create a new file in the current folder
+
+git init - To initialize a git repository
+git status - To check whether current repository is a git repository or not. If current repository is a git 
+repository, then it gives files which are in staging and in working directory
+
+git add --a - This command adds all the files from current working directory into staging. Also use to move files from untracked to unmodified stage.
+git commit -m "commit message" - This command is used to commit the staged files into git repo.
+rm -rf .git - This command is used to remove the .git folder, hence removing the current repo from git.
+
+git diff - This command is used to compare working directory to staging area.
+git diff --staged - This is used to compare staging area to the previous commit.
+git commit -a -m "commit message" -  This commit all the tracked files from the working directory without moving to the staging area. It will not commit untracked files
+
+git rm filename.ext - To remove a file from the directory and it will automatically stage the deleted files
+git mv filename.ext new_filename -  To rename a file and also stage this rename change in single command.
+git rm --cached filename - This is used to make a file as untracked which is previously being tracked. This command is run after the adding the filename to the git ignore file.
+
+git log -  Gives details of all the git commits
+git log -p - This command give the list of git commits along with the changes that are commited in each commit.
+git log -p -3 - The last parameter is the number of commits that this command will show
+git log --stat -  Gives high level idea what changes are there in each commit
+git log --pretty=oneline - Give details of each commit in a single line
+git log --pretty=short - Give details of each commit in a short
+git log --pretty=full - Give details of each commit
+git log --since=2.days
+git log --since=2.weeks
+git log --since=2.months
+git log --since=2.years
+git log --pretty=format:"someformat"
+git commit --amend - This command is used to amend an existing commit. You can add new changes and can also amend the commit message
