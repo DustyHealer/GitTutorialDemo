@@ -41,5 +41,5 @@ git log --since=2.years
 git log --pretty=format:"someformat"
 git commit --amend - This command is used to amend an existing commit. You can add new changes and can also amend the commit message
 
-git restore --staged filename - This command is used to unstage a previously staged file.
+git restore --staged filename - This command is used to unstage a previously staged file. Cannot use this command to restore files in the staging area.
 git checkout -- filename - This command is used to discard changes in the file present in working directory.
