@@ -43,4 +43,8 @@ git commit --amend - This command is used to amend an existing commit. You can a
 
 git restore --staged filename - This command is used to unstage a previously staged file. Cannot use this command to restore files in the staging area.
 git checkout -- filename - This command is used to discard changes in the file present in working directory.
-git checkout -f - This command takes the working repo to the last commited code. This removes the changes from both working directory and staging area. 
+git checkout -f - This command takes the working repo to the last commited code. This removes the changes from both working directory and staging area.
+
+git remote - This command is used to check the current remote.
+git push -u origin master -  This command is used to push code from local to remote.
+git config --global alias.st status - This command is used to set an alias for a git command. Like in this example, we set st alias for the status command. 
