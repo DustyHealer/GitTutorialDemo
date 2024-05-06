@@ -46,5 +46,13 @@ git checkout -- filename - This command is used to discard changes in the file p
 git checkout -f - This command takes the working repo to the last commited code. This removes the changes from both working directory and staging area.
 
 git remote - This command is used to check the current remote.
+git remote add origin remote_name: This command is used to add a remote for the git repo.
 git push -u origin master -  This command is used to push code from local to remote.
 git config --global alias.st status - This command is used to set an alias for a git command. Like in this example, we set st alias for the status command. 
+
+GIT BASH COMMANDS TO ADD SSH SECURITY WITH GITHUB
+ssh-keygen -t rsa -b 4096 -C "developer.singhal@gmail.com" - This command will sha-rsa in your local machine.
+eval $(ssh-agent -s) - This command will start the local ssh agent.
+ssh-add ~/.ssh/id_rsa - This command will add generated rsa key to the local agent.
+tail ~/.ssh/id_rsa.pub -  This command is used to copy the ssh-rsa token, so that we can paste it into github.
+ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts - We need this command sometimes if ssh doesnt work after running the above commands.
